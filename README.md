@@ -1,7 +1,5 @@
-En este *repl* puedes encontrar varios ejemplos que te pueden ayudar con las tareas de estructura.
-
-## Código de Ejemplo (tarea1)
-Para ejecutar el ejemplo tarea1 primero debemos compilar (en la carpeta raíz)
+## Código de Ejemplo (tarea2)
+Para guardar cambios  debemos usar (en la carpeta raíz)
 ````
 gcc tdas/*.c tarea1.c -Wno-unused-result -o tarea1
 ````
@@ -11,23 +9,54 @@ Y luego ejecutar:
 ./tarea1
 ````
 
-## TDAs
-En la carpeta `tdas` se encuentran implementados distintos TDAs que puedes utilizar (lista, pila, cola, cola con prioridad y mapas). 
+## LO QUE FUNCIONA Y LO QUE NO
 
-Las implementaciones no son las más eficientes (todas usan como estructura de datos una **lista enlazada**), por lo que puedes reemplazarlas por las que has realizado en los labs.
+En este codigo todas las funcionalidades cumplen correctamente!
 
-## Otros códigos (en carpeta examples)
-Para ejecutar los distintos ejemplos que hay en la carpeta `examples`, primero debes compilarlos. Si estamos en la carpeta raíz:
-````
-gcc tdas/*.c examples/example2_menu.c -Wno-unused-result -o example
-````
-Y luego ejecutarlos:
-````
-./example
-````
+El unico caso que no podria funcionar sería si queremos buscar por director ingresando mas de uno! debido a que no se uso split string 
+y solo se considero el caso en que buscamos de a un director!!
 
-Se incluyen los siguientes ejemplos:
-* `example1_list`: Uso del TDA Lista, inserción y eliminación de elementos.
-* `example2_menu`: Ejemplo de menú con submenús.
-* `example3_readcsv`: Ejemplo de lectura desde un archivo csv y almacenamiento en datos estructurados.
-* `example4_map`: Ejemplo de uso del TDA mapa.
+##EJEMPLO DE FUNCIONAMIENTO
+========================================
+     Stream Finder
+========================================
+1) Cargar Cátalogo
+2) Buscar Por Género
+3) Buscar por Director
+4) Buscar por Década
+5) Búsqueda Avanzada
+6) Agregar a mi Watchlist
+7) Eliminar de mi Watchlist
+8) Mostrar mi Watchlist
+9) Salir
+Ingrese su opción: 1
+Catalogo Cargado Exitosamente!
+Presione una tecla para continuar...
+
+========================================
+     Stream Finder
+========================================
+1) Cargar Cátalogo
+2) Buscar Por Género
+3) Buscar por Director
+4) Buscar por Década
+5) Búsqueda Avanzada
+6) Agregar a mi Watchlist
+7) Eliminar de mi Watchlist
+8) Mostrar mi Watchlist
+9) Salir
+Ingrese su opción: 2
+Ingrese el genero que desea buscar : Action
+
+Peliculas Con Género : Action
+Titulo : Shichinin no samurai
+ID: tt0047478 | Año : 1954 | Rating : 8.60
+Director : Akira Kurosawa 
+.....................................
+Titulo : Star Wars: Episode V - The Empire Strikes Back
+ID: tt0080684 | Año : 1980 | Rating : 8.70
+Director : Irvin Kershner 
+.....................................
+//MUCHAS PELICULAS DESPUES!
+Presione una tecla para continuar...
+
